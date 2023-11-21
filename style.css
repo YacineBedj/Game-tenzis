@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 230, 0);
+}
+h1{
+    text-transform: capitalize;
+    position: relative;
+    font-size: 50px;
+    z-index: 20;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    bottom: 18%;
+    background-color: rgb(255, 255, 255);
+    z-index:-1;
+}
+.numbers{
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap:10px;
+    margin: 30px 0;
+}
+.nbr{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(237, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn{
+    background-color: white;
+    padding: 10px 20px;
+    font-size:xx-large;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.temp-active{
+    background-color: rgb(246, 252, 165);
+}
+.fix-active{
+    background-color: rgb(170, 248, 170);
+}
+.win{
+    position: absolute;
+    top:50%;
+    background-color: rgb(170, 248, 170);
+    padding: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.losse{
+    position: absolute;
+    top:50%;
+    background-color: rgb(255, 146, 146);
+    padding: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
